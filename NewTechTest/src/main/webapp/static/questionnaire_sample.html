@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+#div0 {
+	width: 350px;
+	height: 35px;
+	padding: 30px;
+	border: 5px solid #aaaaaa;
+}
+
+#div1 {
+	width: 350px;
+	height: 140px;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
+}
+
+#div2 {
+	width: 350px;
+	height: 140px;
+	padding: 10px;
+	border: 1px solid #aaaaaa;
+}
+</style>
+<script>
+	var myList = [];
+
+	if (!Array.prototype.remove) {
+		Array.prototype.remove = function(val) {
+			var i = this.indexOf(val);
+			return i > -1 ? this.splice(i, 1) : [];
+		};
+	}
+
+	function allowDrop(ev) {
+		ev.preventDefault();
+	}
+
+	function drag(ev) {
+		ev.dataTransfer.setData("text", ev.target.id);
+	}
+
+	function drop(ev) {
+		ev.preventDefault();
+		if (ev.target.id == "div1" || ev.target.id == "div2") {
+			var data = ev.dataTransfer.getData("text");
+
+			ev.target.appendChild(document.getElementById(data));
+
+			if (ev.target.id == "div1" && myList.indexOf(data) == -1) {
+				myList[myList.length] = data;
+			
+			} else {
+				if (ev.target.id == "div2"){
+					myList.remove(data);
+				}
+				
+			
+			}
+
+			document.getElementById("r1").value = myList;
+		}
+	}
+</script>
+</head>
+<body>
+
+
+<div id="div0">
+	<input type="text" id="r1" name="r1" value="" readonly disabled />
+</div>
+
+<br>
+
+<table>
+	<tr>
+		<td>
+			<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+		</td>
+		
+		<td>
+			<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+				<input 
+					type="text" id="q5" name="q5" value="Question five" readonly
+					draggable="true" ondragstart="drag(event)"
+					ondragover="allowDrop(event)" /><br> 
+					
+				<input 
+					type="text" id="q6"
+					name="q6" value="Question six" readonly draggable="true"
+					ondragstart="drag(event)" ondragover="allowDrop(event)" /><br> 
+					
+				<input
+					type="text" id="q7" name="q7" value="Question seven" readonly
+					draggable="true" ondragstart="drag(event)"
+					ondragover="allowDrop(event)" /><br>
+			</div>
+		</td>
+	</tr>
+</table>		
+		
+
+	
+
+</body>
+</html>
