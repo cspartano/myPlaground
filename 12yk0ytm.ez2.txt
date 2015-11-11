@@ -1,0 +1,30 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   NewTechTest/.classpath
+#	new file:   NewTechTest/.project
+#	new file:   NewTechTest/.settings/.jsdtscope
+#	new file:   NewTechTest/.settings/org.eclipse.jdt.core.prefs
+#	new file:   NewTechTest/.settings/org.eclipse.m2e.core.prefs
+#	new file:   NewTechTest/.settings/org.eclipse.wst.common.component
+#	new file:   NewTechTest/.settings/org.eclipse.wst.common.project.facet.core.xml
+#	new file:   NewTechTest/.settings/org.eclipse.wst.jsdt.ui.superType.container
+#	new file:   NewTechTest/.settings/org.eclipse.wst.jsdt.ui.superType.name
+#	new file:   NewTechTest/.settings/org.eclipse.wst.validation.prefs
+#	new file:   NewTechTest/pom.xml
+#	new file:   NewTechTest/src/main/java/com/spartano/sandbox/app/AtmosphereController.java
+#	new file:   NewTechTest/src/main/java/com/spartano/sandbox/app/AtmosphereResolver.java
+#	new file:   NewTechTest/src/main/resources/rebel.xml
+#	new file:   NewTechTest/src/main/webapp/WEB-INF/mvc-dispatcher-servlet.xml
+#	new file:   NewTechTest/src/main/webapp/WEB-INF/pages/chat.jsp
+#	new file:   NewTechTest/src/main/webapp/WEB-INF/web.xml
+#	new file:   NewTechTest/src/main/webapp/resources/atmosphere.js
+#	new file:   NewTechTest/src/main/webapp/resources/jquery.atmosphere.js
+#	new file:   NewTechTest/src/main/webapp/static/questionnaire_sample.html
+#	new file:   NewTechTest/src/test/java/com/spartano/sandbox/app/AppTests.java
+#
+
